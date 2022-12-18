@@ -1,0 +1,6 @@
+CREATE TABLE "images" (
+	"id" SERIAL PRIMARY KEY,
+	"productId" INTEGER NOT NULL REFERENCES "products"("id"),
+	"URL" TEXT NOT NULL,
+	"main" BOOLEAN NOT NULL DEFAULT FALSE
+);
